@@ -1,5 +1,9 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import router from './router'
-console.log(router)
-Vue.use(VueRouter)
+
+const app = Vue.createApp({
+    router,
+})
+app.use(VueRouter)
+app.mount('#app')
